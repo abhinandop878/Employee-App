@@ -7,12 +7,17 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { FormComponent } from './form/form.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AddStudentComponent } from './add-student/add-student.component';
 const AppRoutes:Routes=[
   {
     path:"",component:AddEmployeeComponent
   },
   {
     path:"search",component:SearchEmployeeComponent
+  },
+  {
+    path:"searchStudent",component:AddStudentComponent
+
   }
 ]
 @NgModule({
@@ -20,7 +25,8 @@ const AppRoutes:Routes=[
     AppComponent,
     AddEmployeeComponent,
     FormComponent,
-    SearchEmployeeComponent
+    SearchEmployeeComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,
