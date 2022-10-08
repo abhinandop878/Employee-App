@@ -10,7 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddStudentComponent } from './add-student/add-student.component';
 const AppRoutes:Routes=[
   {
-    path:"",component:AddEmployeeComponent
+    path:"",component:FormComponent
   },
   {
     path:"search",component:SearchEmployeeComponent
